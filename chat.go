@@ -333,6 +333,8 @@ type ChatCompletionRequest struct {
 	SafetyIdentifier string `json:"safety_identifier,omitempty"`
 	// Embedded struct for non-OpenAI extensions
 	ChatCompletionRequestExtensions
+	// support qwen,deepseek、doubao api extra params
+	ExtraBody map[string]any `json:"extra_body,omitempty"`
 }
 
 type StreamOptions struct {
